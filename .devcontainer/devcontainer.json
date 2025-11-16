@@ -1,0 +1,20 @@
+{
+    "name": "USACO Club - Java",
+    "image": "mcr.microsoft.com/devcontainers/java:ubuntu-22.04",
+    
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "vscjava.vscode-java-pack",
+                "formulahendry.code-runner"
+            ],
+            "settings": {
+                "code-runner.executorMap": {
+                    "java": "cd $dir && javac $fileName && java $fileNameWithoutExt"
+                }
+            }
+        }
+    },
+
+    "postCreateCommand": "echo 'Java environment ready!' && javac -version"
+}
